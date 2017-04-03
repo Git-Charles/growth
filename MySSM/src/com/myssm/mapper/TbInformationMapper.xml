@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myssm.mapper.TbInformationMapper">
+  <resultMap id="BaseResultMap" type="com.myssm.bean.TbInformation">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="info_id" jdbcType="INTEGER" property="infoId" />
+    <result column="info_date" jdbcType="DATE" property="infoDate" />
+    <result column="info_title" jdbcType="VARCHAR" property="infoTitle" />
+    <result column="create_user_id" jdbcType="INTEGER" property="createUserId" />
+    <result column="create_date" jdbcType="DATE" property="createDate" />
+    <result column="ispush" jdbcType="INTEGER" property="ispush" />
+    <result column="info_category_id" jdbcType="INTEGER" property="infoCategoryId" />
+    <result column="info_content" jdbcType="LONGVARCHAR" property="infoContent" />
+  </resultMap>
+  
+  <select id="getInformation" resultMap="BaseResultMap">
+    select * from tb_information 
+   </select>
+  
+</mapper>

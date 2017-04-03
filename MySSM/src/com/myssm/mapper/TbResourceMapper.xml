@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myssm.mapper.TbResourceMapper">
+  <resultMap id="BaseResultMap" type="com.myssm.bean.TbResource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="menu_id" jdbcType="VARCHAR" property="menuId" />
+    <result column="res_id" jdbcType="VARCHAR" property="resId" />
+    <result column="descn" jdbcType="VARCHAR" property="descn" />
+    <result column="p_res_id" jdbcType="VARCHAR" property="pResId" />
+  </resultMap>
+</mapper>
